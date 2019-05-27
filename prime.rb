@@ -1,5 +1,5 @@
 # Add  code here!
-require math
+require 'mathn'
 
 def prime?(num)
   (2..Math.sqrt(num)).each { |i|
