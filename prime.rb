@@ -2,8 +2,8 @@
 
 
 def prime?(num)
-  num = num.abs
-  (2..Math.sqrt(num)).each { |i|
+  if num.abs == 0 || num.abs == 1
+  (2..Math.sqrt(num.abs)).each { |i|
     if num % i == 0
       return false
     end
