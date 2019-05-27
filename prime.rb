@@ -4,7 +4,7 @@
 def prime?(num)
   num = num.abs
   (2..Math.sqrt(num)).each { |i|
-    if num % i && i < num
+    if num % i
       return false
     end
   }
